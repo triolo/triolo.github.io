@@ -87,6 +87,8 @@ hr {
 
   .container {
     padding-bottom: 0;
+    margin-left: 20%;
+    max-width: 600px;
   }
 }
 
@@ -96,7 +98,7 @@ hr {
   cursor: pointer;
   letter-spacing: 0.8px;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 22px;
   font-weight: 300;
 
   span {
@@ -104,8 +106,17 @@ hr {
   }
 }
 
+.sublogo {
+  align: left;
+  font-family: $base-font-family;
+  margin: 0 0 1em 0;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+}
+
 .nav {
-  min-height: 64px;
+  min-height: 50px;
 }
 
 .navbar {
@@ -169,7 +180,7 @@ hr {
 
 .post-title {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   color: $dark-gray-color;
 }
 
@@ -292,3 +303,38 @@ hr {
     }
   }
 }
+
+.portrait {
+  position: relative;
+  @extend .pull-right;
+  display: inline-block;
+  padding-right: 18%;
+  padding-top: 0.5em;
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    height: 200px;
+    width: 200px;
+    font-size: 1.5em;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    .portrait-avatar {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+    @media (max-width : 480px) {&:hover + .portrait-prompt,
+      &:focus + .portrait-prompt {
+        display: none !important;
+      }
+    }
+  }
+}
+
+

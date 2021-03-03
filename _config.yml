@@ -1,10 +1,12 @@
 # Site settings
-title_left    : "Tri"
-title_right   : "partite" # default: ""
-description   : "Triolo's personal site & blog."
+title_left    : "Konstantin  "
+title_right   : "Filatov" # default: ""
+#subtitle      : "a blog about language description"
+description   : "Konstantin Filatov's personal site & blog."
 keywords      : "personal, website, site, theoretical linguistics, linguistics, science, blog"
 url           : https://triolo.github.io/ # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+portrait_url  : https://avatars.githubusercontent.com/u/8500736?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 cover         : "" # image uri like logo/cover image for site seo
 
 google_analytics  : UA-64758074-2
@@ -28,7 +30,7 @@ sass:
 
 # Author settings
 author:
-  name     : "Triolo"
+  name     : "Konstantin Filatov"
 
 plugins:
   - jekyll-sitemap
